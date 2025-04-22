@@ -1,18 +1,20 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int n;
-    cin >> n;
-
-    int arr[n];
-    for(int i = 0; i < n; i++){
-        cin >> arr[i];
+int returning_smth(vector<int> nums, int target){
+    int n = nums.size();
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 1; j < n; j++){
+            if(nums[i]+ nums[j]==target){
+                return i;
+            }
+            }
     }
-    int target;
-    cin >> target;
+    return -1; 
+}
 
-    // 2 sum main logic. 
-    
+int main(){
+
+    return 0;
 }
