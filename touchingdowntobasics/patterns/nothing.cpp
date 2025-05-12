@@ -140,6 +140,14 @@ void print10(int n)
   }
 }
 
+void print11(int n){
+
+  for (int i = 0; i < n;i++){
+    // numbers are twice the row number.
+    
+  }
+}
+
 int main()
 {
   int n;
